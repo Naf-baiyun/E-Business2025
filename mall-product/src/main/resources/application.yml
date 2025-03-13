@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.233.128/mall_pms
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  #告诉mybatisplus xml文件在哪
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      #主键自增
+      id-type: auto
