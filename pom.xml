@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <name>E-Business2025</name>
-    <description>所有微服务的父项目</description>
+    <description>所有微服务的父项目，提供聚合服务</description>
     <packaging>pom</packaging>
 
     <modules>
@@ -19,8 +19,21 @@
         <module>mall-ware</module>
         <module>renren-fast</module>
         <module>renren-generator</module>
-        <module>renren-generator</module>
         <module>mall-common</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

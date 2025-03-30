@@ -1,0 +1,17 @@
+package com.naf.mall.ware.dao;
+
+import com.naf.mall.ware.entity.PurchaseDetailEntity;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+
+/**
+ * 
+ * 
+ * @author Fan
+ * @email 3366208071@qq.com
+ * @date 2025-03-26 18:01:55
+ */
+@Mapper
+public interface PurchaseDetailDao extends BaseMapper<PurchaseDetailEntity> {
+	
+}

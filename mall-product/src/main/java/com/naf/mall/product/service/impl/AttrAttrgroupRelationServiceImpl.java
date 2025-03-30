@@ -19,7 +19,7 @@ public class AttrAttrgroupRelationServiceImpl extends ServiceImpl<AttrAttrgroupR
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
         IPage<AttrAttrgroupRelationEntity> page = this.page(
-                new Query<AttrAttrgroupRelationEntity>().getPage(params),
+                new Query().getPage(params),
                 new QueryWrapper<AttrAttrgroupRelationEntity>()
         );
 
